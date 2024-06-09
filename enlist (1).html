@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enlist</title>
+    <link rel="stylesheet" href="enlist.css">
+</head>
+
+<body>
+    <div class="succes">
+    <form  method="Post" action="/enlist">
+        <label for="owner_name" class="ro">Owner name:</label><br>
+        <input type="text" id= "owner_name" name="f_owner_name" class="hold" placeholder="owner name">
+        <br><br>
+        <label for="owner_name" class="ro">Email:</label><br>
+        <input type="email" id= "email"name="f_mail"class="hold" placeholder="enter email">
+        <br><br>
+        <label for="owner_name" class="ro">Pg name:</label><br>
+        <input type="text" id= "pg_name" name="f_pg_name"class="hold" placeholder="pg name">
+        <br><br>
+        <label for="owner_name" class="ro">Google Location:</label><br>
+        <input type='url' id= "location"name="f_location" class="hold" placeholder="urls">
+        <br><br>
+        <label for="owner_name" class="ro">Postal code:</label><br>
+        <input type="number" id= "postal_code" name="f_postal_code" class="hold" placeholder="postal code">
+        <br><br>
+        <label for="owner_name" class="po">Ameneties:</label><br>
+        <fieldset style ="height: 98px; width:40%;background-color:#fff">
+            <!-- <legend  class="po">Ameneties</legend> -->
+            <label for="room_services"  class="po">Room services:</label>
+            <input type="checkbox" name="f_a_room_services"class="check" id="room_services">
+            <br>
+            <label for="Refridgerator" class="po">Refridgerator:</label>
+            <input type="checkbox" name="f_a_Refridgerator"class="check" id="Refridgerator">
+            <br>
+            <label for="Wifi"  class="po">Wifi:</label>
+            <input type="checkbox" name="f_a_Wifi" class="check" id="Wifi">
+            <br>
+            <label for="Power_Backup" class="po">Power Backup:</label>
+            <input type="checkbox" name="f_a_Power_Backup" class="check" id="Power_Backup">
+        </fieldset style="height:100px;">
+        <!-- <b></b><br> -->
+        <legend class="des">Descripton:</legend>
+        <textarea class="add" name="additional description" id="description" class="adit"placeholder=" Additional details....."></textarea>
+        <br><br>
+        <button class="but"type="submit" id = "submit">Submit</button>
+        <!-- todo : choose files to upload images for pg -->
+    </form>
+</div>
+
+    <script src="enlist.js"></script>
+</body>
+
+</html>
